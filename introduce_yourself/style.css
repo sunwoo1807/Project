@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+.index {
+  margin: 0;
+  background-color: #e9f9b8;
+  font-family: 'Pretendard';
+}
+
+.hobby {
+  margin: 0;
+  background-color: #f8c6b9;
+  font-family: 'Pretendard';
+}
+
+.gallery {
+  margin: 0;
+  background-color: #b9f8f4;
+  font-family: 'Pretendard';
+}
+
+.likeyoutube {
+  margin: 0;
+  background-color: #f8e9b9;
+  font-family: 'Pretendard';
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 50px;
+  background-color: white;
+  border-bottom: 3px solid #000;
+}
+
+.navbar nav a {
+  margin: 0 15px;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold; 
+  margin-bottom: 10px;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+    flex-wrap: wrap;
+}
+
+.gallery_like {
+    width: 400px;    
+    height: auto;
+}
+
+.gallery_like:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.embed {
+    width: 500px;
+    height: 130px;
+}
