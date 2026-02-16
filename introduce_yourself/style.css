@@ -83,9 +83,106 @@ img {
   border-radius: 12px;
 }
 
+/* ===== 바로가기 카드 ===== */
+.cards {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  text-decoration: none;
+  color: #222;
+  flex: 1;
+}
+
+.card:hover {
+  background: #f1f5f9;
+}
+
+.card h3 {
+  margin: 0 0 8px 0;
+}
+
+.card p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+/* ===== 취미 항목 ===== */
+.hobby-item {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.hobby-item h3 {
+  margin: 0 0 8px 0;
+}
+
+.hobby-item p {
+  margin: 0;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* ===== 갤러리 그리드 ===== */
+.gallery-grid {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  flex: 1;
+  min-width: 200px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.gallery-item img:hover {
+  opacity: 0.85;
+}
+
+.caption {
+  margin: 8px 0 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
 .gallery_like {
   width: 100%;
   max-width: 400px;
+}
+
+/* ===== 영상 항목 ===== */
+.video-item {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.video-item h3 {
+  margin: 0 0 4px 0;
+}
+
+.video-item p {
+  margin: 0 0 16px 0;
+  color: #666;
+  font-size: 14px;
 }
 
 /* ===== 버튼처럼 보이는 링크 ===== */
