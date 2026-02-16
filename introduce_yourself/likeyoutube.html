@@ -6,20 +6,41 @@
     <title>likeyoutube</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="likeyoutube">
-    <header class="navbar">
-        <h1 class="logo">박선우의 자기소개😝</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="hobby.html">Hobby</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="likeyoutube.html">Likeyoutube</a>
-        </nav>
-    </header>
+<body>
+  <div id="top"></div>
 
-    <div>
-        <h2>좋아하는 유튜브 영상</h2>
-        <embed src="https://youtu.be/ufupPuN8VVw?si=clp5qc7Z5ReTLzt4" class="embed">
+  <!-- ===== 헤더(상단 메뉴) — 모든 페이지에 똑같이! ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">박선우의 사이트</a>
+
+      <nav class="nav">
+        <a href="index.html" class="nav-link">홈</a>
+        <a href="hobby.html" class="nav-link">취미</a>
+        <a href="gallery.html" class="nav-link">갤러리</a>
+        <a href="likeyoutube.html" class="nav-link active">유튜브</a>
+      </nav>
     </div>
+  </header>
+
+  <!-- ===== 메인 — 여기만 페이지마다 다르게! ===== -->
+  <main class="site-main">
+    <div class="container">
+      <!-- 기존 내용을 여기에 옮겨넣기 -->
+        <div>
+            <h2>좋아하는 유튜브 영상</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ufupPuN8VVw?si=uXB1YsBnYf1fMHn3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+  </main>
+
+  <!-- ===== 푸터(하단) — 모든 페이지에 똑같이! ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-text">2026 박선우</p>
+      <a class="to-top" href="#top">맨 위로</a>
+    </div>
+  </footer>
+</body>
 </body>
 </html>

@@ -1,81 +1,154 @@
-@font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2') format('woff2');
-    font-weight: 900;
-    font-display: swap;
+/* ===== 기본 설정 ===== */
+* {
+  box-sizing: border-box;
 }
 
-.index {
+body {
   margin: 0;
-  background-color: #e9f9b8;
-  font-family: 'Pretendard';
+  font-family: 'Pretendard', Arial, sans-serif;
+  line-height: 1.6;
+  background: #f6f7fb;
+  color: #222;
 }
 
-.hobby {
-  margin: 0;
-  background-color: #f8c6b9;
-  font-family: 'Pretendard';
+/* 내용이 너무 넓어지지 않게 가운데 정렬 */
+.container {
+  width: min(980px, 92%);
+  margin: 0 auto;
 }
 
-.gallery {
-  margin: 0;
-  background-color: #b9f8f4;
-  font-family: 'Pretendard';
+/* ===== 헤더 (상단 메뉴) ===== */
+.site-header {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;    /* 스크롤 내려도 메뉴가 위에 붙어있게! */
+  top: 0;
+  z-index: 10;
 }
 
-.likeyoutube {
-  margin: 0;
-  background-color: #f8e9b9;
-  font-family: 'Pretendard';
-}
-
-
-.navbar {
+.header-inner {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 5px 50px;
-  background-color: white;
-  border-bottom: 3px solid #000;
-}
-
-.navbar nav a {
-  margin: 0 15px;
-  color: black;
-  text-decoration: none;
-  font-weight: 600;
+  justify-content: space-between;
+  padding: 14px 0;
+  gap: 16px;
 }
 
 .logo {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 18px;
+  color: #111;
+}
+
+/* ===== 메뉴 링크들 ===== */
+.nav {
   display: flex;
-  align-items: center;
-  font-size: 20px;
-  font-weight: bold; 
-  margin-bottom: 10px;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-.navbar nav a:hover {
-  text-decoration: underline;
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 10px;
 }
 
-.gallery-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px; 
-    flex-wrap: wrap;
+.nav-link:hover {
+  background: #f1f5f9;
+}
+
+/* 현재 페이지 메뉴 스타일 */
+.nav-link.active {
+  background: #111827;
+  color: white;
+}
+
+/* ===== 메인 영역 ===== */
+.site-main {
+  padding: 28px 0 60px;
+}
+
+.site-main h1 {
+  margin-top: 0;
+}
+
+/* ===== 이미지 ===== */
+/* max-width: 100%로 하면 화면보다 큰 이미지도 알아서 줄어들어! */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
 }
 
 .gallery_like {
-    width: 400px;    
-    height: auto;
+  width: 100%;
+  max-width: 400px;
 }
 
-.gallery_like:hover {
-    transform: scale(1.1);
-    z-index: 10;
+/* ===== 버튼처럼 보이는 링크 ===== */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #111827;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: 700;
+  margin-top: 16px;
 }
 
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* ===== 유튜브 영상 ===== */
 .embed {
-    width: 500px;
-    height: 130px;
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border-radius: 12px;
+}
+
+/* ===== 푸터 (하단) ===== */
+.site-footer {
+  background: white;
+  border-top: 1px solid #e5e7eb;
+  padding: 18px 0;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-text {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.to-top {
+  text-decoration: none;
+  color: #111;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: #f1f5f9;
+  font-size: 14px;
+}
+
+.to-top:hover {
+  background: #e2e8f0;
+}
+
+/* ===== Pretendard 폰트 ===== */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-display: swap;
 }

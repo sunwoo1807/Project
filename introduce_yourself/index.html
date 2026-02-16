@@ -6,28 +6,48 @@
     <title>Introduce yourself</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="index">
-    <header class="navbar">
-        <h1 class="logo">박선우의 자기소개😝</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="hobby.html">Hobby</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="likeyoutube.html">Likeyoutube</a>
-        </nav>
-    </header>
+<body>
+  <div id="top"></div>
 
-    <div>
-        <h1>박선우의 자기소개!😎</h1>
-        <p>
-            안녕하세요? 박선우입니다. 간단하게 먼저 자기소개 하겠습니다!😅 <br>
-            저의 이름은 박선우이고 나이는 2026년 기준 16세 입니다! <br>
-            저는 5명의 가족과 1마리의 반려동물과 같이 살고 있습니다! <br>
-            반려동물의 이름은 "토리"이며 나머지 가족들의 이름은 개인정보라서 비밀입니다! <br>
-            취미생활과 장래희망 저의 취향은 밑에서 알아보겠습니다!
-        </p>
+  <!-- ===== 헤더(상단 메뉴) — 모든 페이지에 똑같이! ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">박선우의 사이트</a>
+
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">홈</a>
+        <a href="hobby.html" class="nav-link">취미</a>
+        <a href="gallery.html" class="nav-link">갤러리</a>
+        <a href="likeyoutube.html" class="nav-link">유튜브</a>
+      </nav>
     </div>
+  </header>
 
-    <a href="tel:+821056509563">박선우에게 연락하기📞</a>
+  <!-- ===== 메인 — 여기만 페이지마다 다르게! ===== -->
+  <main class="site-main">
+    <div class="container">
+      <!-- 기존 내용을 여기에 옮겨넣기 -->
+        <div>
+            <h1>박선우의 자기소개!😎</h1>
+            <p>
+                안녕하세요? 박선우입니다. 간단하게 먼저 자기소개 하겠습니다!😅 <br>
+                저의 이름은 박선우이고 나이는 2026년 기준 16세 입니다! <br>
+                저는 5명의 가족과 1마리의 반려동물과 같이 살고 있습니다! <br>
+                반려동물의 이름은 "토리"이며 나머지 가족들의 이름은 개인정보라서 비밀입니다! <br>
+                취미생활과 장래희망 저의 취향은 밑에서 알아보겠습니다!
+            </p>
+        </div>
+
+        <a href="tel:+821056509563">박선우에게 연락하기📞</a>
+    </div>
+  </main>
+
+  <!-- ===== 푸터(하단) — 모든 페이지에 똑같이! ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-text">2026 박선우</p>
+      <a class="to-top" href="#top">맨 위로</a>
+    </div>
+  </footer>
 </body>
 </html>
