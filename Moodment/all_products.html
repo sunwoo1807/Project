@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Products</title>
+    <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="all_products.css">
 </head>
 <body>
@@ -11,7 +12,33 @@
 
     <div class="shop-layout">
         <aside class="sidebar">
-            <div class="box-placeholder">사이드바 (카테고리, 필터)</div>
+            <div class="box-placeholder">
+                <div class="filter-group">
+                    <h3>카테고리</h3>
+                    <label><input type="checkbox"> 상의</label>
+                    <label><input type="checkbox"> 하의</label>
+                    <label><input type="checkbox"> 모자</label>
+                    <label><input type="checkbox"> 가방</label>
+                    <label><input type="checkbox"> 악세사리</label>
+                </div>
+
+                <div class="filter-group">
+                    <h3>가격</h3>
+                    <label><input type="radio" name="price"> 전체</label>
+                    <label><input type="radio" name="price"> 15달러</label>
+                    <label><input type="radio" name="price"> 20달러</label>
+                    <label><input type="radio" name="price"> 30달러</label>
+                </div>
+            
+                <div class="filter-group">
+                    <h3>평점</h3>
+                    <label><input type="checkbox"> ⭐⭐⭐⭐⭐ 이상</label>
+                    <label><input type="checkbox"> ⭐⭐⭐⭐ 이상</label>
+                    <label><input type="checkbox"> ⭐⭐⭐ 이상</label>
+                    <label><input type="checkbox"> ⭐⭐ 이상</label>
+                    <label><input type="checkbox"> ⭐ 이상</label>
+                </div>
+            </div>
         </aside>
 
         <main class="main-content">

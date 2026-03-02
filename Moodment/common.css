@@ -1,0 +1,353 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'YPairing', sans-serif;
+  line-height: 1.6;
+  background: #FFF4E0;
+  color: #222;
+}
+
+.header-frame {
+  width: 100%;
+  height: 147px;
+  border: 0;
+  display: block;
+}
+
+.main_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  height: 80px;
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+}
+
+.logo img {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.search-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background-color: white;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #3c4043;
+}
+
+.search-box input::placeholder {
+  color: #70757a;
+}
+
+.search-icon {
+  color: #5f6368;
+  cursor: pointer;
+  user-select: none;
+}
+
+.search-icon:hover {
+  color: #202124;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: 30px;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+.nav-link:hover {
+  background: #f1f5f9;
+}
+
+/* 현재 페이지 메뉴 스타일 */
+.nav-link.active {
+  background: #111827;
+  color: white;
+}
+
+
+.material-symbols-outlined {
+  font-size: 40px;
+}
+
+.sub-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 5%;
+  background-color: #fff;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.menu-list li {
+  font-size: 15px;
+  color: #555;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.menu-list li.active, 
+.menu-list li.highlight {
+  color: #c4a47c;
+  font-weight: bold;
+}
+
+.user-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-icons .material-symbols-outlined {
+  font-size: 28px;
+  color: #333;
+  cursor: pointer;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.badge {
+  position: absolute;          /* absolute 써야 아이콘 위에 겹칠 수 있어 */
+  top: -5px;               /* 위로 얼마나 올릴지 */
+  right: -5px;             /* 오른쪽으로 얼마나 이동할지 */
+  background-color: red;  /* 빨간색 계열 */
+  color: #000;             /* 글자색 (흰색) */
+  font-size: 12px;         /* 작은 글자 */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;     /* 동그랗게 만들려면? */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-frame {
+  width: 100%;
+  height: 991px;
+  border: 0;
+  display: block;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0px;
+  background-color: #FFF;
+}
+
+      
+.feature-item {
+    flex: 1;
+}
+
+.icon-box {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #e0e0e0; 
+    border-radius: 50%;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+}
+
+.icon-box i {
+    font-size: 24px;
+    color: #d4a373;
+}
+
+.feature-item h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 14px;
+    color: #888;
+    line-height: 1.5;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); 
+  gap: 10px;     
+  padding: 10px;
+  width: 100%;     
+  box-sizing: border-box;
+  background-color: #FFF;
+}
+
+.photo-grid img {
+  width: 100%;   
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.photo-grid img:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.footer-logo {
+  width: 200px;
+  height: auto;
+}
+
+.main-footer {
+  padding: 60px 10%;
+  font-size: 14px;
+  color: #666;
+  border-top: 1px solid #eee;
+  background-color: #e6b07e;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.footer-column h3 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.subscribe-box {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding: 5px 5px 5px 20px;
+  align-items: center;
+}
+
+.subscribe-box input {
+  border: none;
+  flex: 1;
+  outline: none;
+}
+
+.subscribe-box button {
+  background-color: #d2a679;
+  border: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 40px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (max-width: 768px) {
+  .menu-list {
+    font-size: 13px;
+    gap: 15px;
+  }
+  
+  .user-icons {
+    display: none;
+  }
+}
+
+@font-face {
+    font-family: 'YPairing';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-4@1.1/YPairingFont.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+  font-family: 'Material Symbols Outlined';
+  src: url('fonts/material-symbols-outlined.woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
