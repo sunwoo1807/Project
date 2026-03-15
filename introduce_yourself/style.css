@@ -1,0 +1,251 @@
+/* ===== 기본 설정 ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Pretendard', Arial, sans-serif;
+  line-height: 1.6;
+  background: #f6f7fb;
+  color: #222;
+}
+
+/* 내용이 너무 넓어지지 않게 가운데 정렬 */
+.container {
+  width: min(980px, 92%);
+  margin: 0 auto;
+}
+
+/* ===== 헤더 (상단 메뉴) ===== */
+.site-header {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;    /* 스크롤 내려도 메뉴가 위에 붙어있게! */
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+  gap: 16px;
+}
+
+.logo {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 18px;
+  color: #111;
+}
+
+/* ===== 메뉴 링크들 ===== */
+.nav {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+.nav-link:hover {
+  background: #f1f5f9;
+}
+
+/* 현재 페이지 메뉴 스타일 */
+.nav-link.active {
+  background: #111827;
+  color: white;
+}
+
+/* ===== 메인 영역 ===== */
+.site-main {
+  padding: 28px 0 60px;
+}
+
+.site-main h1 {
+  margin-top: 0;
+}
+
+/* ===== 이미지 ===== */
+/* max-width: 100%로 하면 화면보다 큰 이미지도 알아서 줄어들어! */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* ===== 바로가기 카드 ===== */
+.cards {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  text-decoration: none;
+  color: #222;
+  flex: 1;
+}
+
+.card:hover {
+  background: #f1f5f9;
+}
+
+.card h3 {
+  margin: 0 0 8px 0;
+}
+
+.card p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+/* ===== 취미 항목 ===== */
+.hobby-item {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.hobby-item h3 {
+  margin: 0 0 8px 0;
+}
+
+.hobby-item p {
+  margin: 0;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* ===== 갤러리 그리드 ===== */
+.gallery-grid {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  flex: 1;
+  min-width: 200px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.gallery-item img:hover {
+  opacity: 0.85;
+}
+
+.caption {
+  margin: 8px 0 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.gallery_like {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* ===== 영상 항목 ===== */
+.video-item {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.video-item h3 {
+  margin: 0 0 4px 0;
+}
+
+.video-item p {
+  margin: 0 0 16px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+/* ===== 버튼처럼 보이는 링크 ===== */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #111827;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* ===== 유튜브 영상 ===== */
+.embed {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border-radius: 12px;
+}
+
+/* ===== 푸터 (하단) ===== */
+.site-footer {
+  background: white;
+  border-top: 1px solid #e5e7eb;
+  padding: 18px 0;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-text {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.to-top {
+  text-decoration: none;
+  color: #111;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: #f1f5f9;
+  font-size: 14px;
+}
+
+.to-top:hover {
+  background: #e2e8f0;
+}
+
+/* ===== Pretendard 폰트 ===== */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-display: swap;
+}

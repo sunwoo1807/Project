@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodment-My Home</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="my_home.css">
+</head>
+<body>
+    <iframe src="header.html" class="header-frame" scrolling="no"></iframe>
+
+    <div class="status-box">
+        <p class="status-text"></p>
+        <button type="button" class="logout-btn" onclick="logout()">로그아웃</button>
+    </div>
+
+    <div class="login-container">
+        <div class="section-title">소셜 계정으로 로그인</div>
+        <div class="social-buttons">
+            <button class="social-btn-google"><i class="icon-google"></i> Google</button>
+            <div class="social-buttons-row">
+                <button class="social-btn-Kakao"><i class="icon-kakao"></i> Kakao</button>
+                <button class="social-btn-Naver"><i class="icon-Naver"></i> Naver</button>
+            </div>
+        </div>
+
+        <div class="section-title">
+            또는 이메일로 로그인하세요
+        </div>
+            <form class="login-form">
+                <input type="email" name="email" required autocomplete="email" placeholder="이메일 주소를 입력하세요">
+                <input type="password" name="password" required minlength="8" autocomplete="current-password" placeholder="비밀번호를 입력하세요">
+    
+                <div class="form-options">
+                    <label><input type="checkbox"> 계정 기억하기</label>
+                    <a href="customer_service.html" class="forgot-password">비밀번호를 잊으셨나요?</a>
+                </div>
+
+                <p id="login-message" class="form-message" aria-live="polite"></p>
+                <button type="button" class="login-submit-btn" onclick="loginCheck()">로그인</button>
+                <a href="signup.html" class="signup-btn">회원가입 하러 가기</a>
+
+                <p class="form-guide">
+                    계정이 없으시면 회원가입을 진행해주세요.
+                </p>
+            </form>
+    </div>
+
+    <div class="debug-section">
+        <p class="debug-guide">
+            ⚠️ 이 영역은 테스트용입니다. 저장된 모든 데이터를 지웁니다.
+        </p>
+        <button type="button" class="reset-storage-btn" onclick="resetAllData()">
+            데이터 초기화
+        </button>
+        <div id="reset-message" class="form-message"></div>
+    </div>
+
+    <iframe src="footer.html" class="footer-frame"></iframe>
+    <script src="my_home.js"></script>
+</body>
+</html>

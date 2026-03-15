@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodment-Signup</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <iframe src="header.html" class="header-frame" scrolling="no"></iframe>
+
+    <div class="signup-container">
+        <div class="section-title">소셜 계정으로 회원가입</div>
+        <div class="social-buttons">
+            <button class="social-btn-google"><i class="icon-google"></i> Google</button>
+            <div class="social-buttons-row">
+                <button class="social-btn-Kakao"><i class="icon-kakao"></i> Kakao</button>
+                <button class="social-btn-Naver"><i class="icon-Naver"></i> Naver</button>
+            </div>
+        </div>
+
+        <div class="section-title">
+            또는 이메일로 가입하세요
+        </div>
+        <form class="signup-form" action="/join-us" method="POST" >
+            <input type="text" name="userid" pattern="[a-zA-Z0-9]+" required placeholder="영문/숫자 아이디">
+            <input type="password" name="pw" minlength="8" required placeholder="비밀번호 (8자 이상 입력)">
+            <input type="password" name="pw_confirm" minlength="8" required placeholder="비밀번호 재입력">
+            <input type="email" name="email" required autocomplete="email" placeholder="이메일 주소를 입력하세요">
+            <input type="text" name="userName" required placeholder="실명을 입력하세요">
+            <input type="text" name="birth" pattern="\d{6}" maxlength="6" required placeholder="생년월일 6자리">
+            <input type="tel" name="phone" pattern="[0-9]+" required placeholder="전화번호">
+
+            <div class="selection-container">
+            
+              <div class="selection-group">
+                <input type="radio" name="gender" id="male" value="M">
+                <label for="male">남자</label>
+
+                <input type="radio" name="gender" id="female" value="W">
+                <label for="female">여자</label>
+              </div>
+          
+              <div class="selection-group">
+                <input type="radio" name="nationality" id="local" value="local" checked>
+                <label for="local">내국인</label>
+
+                <input type="radio" name="nationality" id="foreign" value="foreign">
+                <label for="foreign">외국인</label>
+              </div>
+          
+            </div>
+      
+            <h3>약관 동의</h3>
+            <label><input type="checkbox" name="agree_terms" required> 이용약관 동의 (필수)</label><br>
+            <label><input type="checkbox" name="agree_location"> 위치기반 서비스 이용약관 (선택)</label><br>
+            <label><input type="checkbox" name="agree_privacy" required> 개인정보 수집 및 이용 안내 (필수)</label><br>
+            <label><input type="checkbox" name="over_14" required> 만 14세 이상입니다 (필수)</label>
+            <br><br>
+      
+            <button type="submit" onclick="location.href='my_home.html'" class="signup-submit-btn">
+                가입하기
+            </button>
+            <button type="button" class="login-btn">
+                <a href="my_home.html">이미 계정이 있나요? (로그인 하러 가기)</a>
+            </button>
+      
+            <p class="form-guide">
+                이미 계정이 있다면 로그인 화면으로 돌아가주세요.
+            </p>
+        </form>
+    </div>
+
+    <iframe src="footer.html" class="footer-frame"></iframe>
+</body>
+</html>
